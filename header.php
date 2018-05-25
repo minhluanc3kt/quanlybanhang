@@ -14,8 +14,23 @@
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 </head>
 <body>
+
+
+    <div id="fh5co-main">
+    <div id="search" style="text-align: right;">
+  <form class="searchform" action="search.php" methog="get">
+    <i class="fa fa-search" aria-hidden="true" style="color: white"></i>
+    <input type="text" name="search" style="height: 30px;">
+    <input class="searchsubmit" type="submit" value="Search" style="height: 30px;">
+    </form>
+</div>
+
      
-           
+    <form class="searchform" action="search.php" methog="get">
+    <i class="fa fa-search" aria-hidden="true" style="color: white"></i>
+    <input type="text" name="search" style="height: 30px;">
+    <input class="searchsubmit" type="submit" value="Search" style="height: 30px;">
+    </form>
           
     <div id="wrapper">
          <div class="navbar navbar-inverse navbar-fixed-top">
@@ -27,7 +42,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="index.php">
-                        <img src="assets/img/logo.png" />
+                    
 
                     </a>
                     
@@ -39,32 +54,39 @@
                 </span>
             </div>
         </div>
+
         <!-- /. NAV TOP  -->
         <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
+
                  
+                    <li class="active-link">
+                        <a href="index.php" ><i class="fa fa-desktop "></i>Trang Chủ<span class="badge">Included</span></a>
+                    </li>
+
+                     <li>
+                        <a href="login_form.php"><i class="fa fa-qrcode "></i>Đăng Nhập</a>
+                    </li>
+                   
 
 
                     <li class="active-link">
                         <a href="products.php" ><i class="fa fa-desktop "></i>Hàng Hóa<span class="badge">Included</span></a>
                     </li>
+                
+
+                    <li>
+                        <a href="thongbao.php"><i class="fa fa-qrcode "></i>Thông Báo Hỗ Trợ</a>
+                    </li>
                    
 
-                    <li>
-                        <a href="ui.html"><i class="fa fa-table "></i>Kho  <span class="badge">Included</span></a>
-                    </li>
-                    <li>
-                        <a href="blank.html"><i class="fa fa-edit "></i>Thu Chi  <span class="badge">Included</span></a>
-                    </li>
+                  
 
-
-                    <li>
-                        <a href="#"><i class="fa fa-qrcode "></i>Thông Báo Hỗ Trợ</a>
-                    </li>
                     
 
                    
+   
                     
                 </ul>
                             </div>
@@ -106,3 +128,4 @@
          <!-- /. PAGE WRAPPER  -->
         </div>
    
+

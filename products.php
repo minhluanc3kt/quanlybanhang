@@ -1,6 +1,8 @@
 <?php 
   include 'database-config.php';
  ?>
+
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,9 +49,11 @@ if(!$result){
 
 if (mysqli_num_rows($result) > 0) {
 
+
 	// Xuất tiều đề bảng
 ?>
 	<!-- MÃ HTML -->
+	<h3><a href="index.php">Quay Lại</a></h3>
 	<div class="container"></div>
 	<a href="addProduct.php" class="btn btn-success pull-right"><i class="fa fa-plus" aria-hidden="true"></i>Thêm</a>
 	<table class="table table-bordered table-striped" id="product-table">
@@ -61,7 +65,7 @@ if (mysqli_num_rows($result) > 0) {
 				<th data-priority="1">Số Lượng</th>
 				<th>Thông Tin Sản Phẩm</th>
 				<th>Loại Sản Phẩm</th>
-				<th data-priority="2">Chỉnh Sửa</th>
+				
 			</tr>
 		</thead>
 		<tbody>
@@ -80,8 +84,7 @@ if (mysqli_num_rows($result) > 0) {
         	echo "<td>" . $row["description"]."</td>";
         	echo "<td>" . $row["category"]."</td>";
         	echo "<td>";
-        	echo '<a class="btn btn-info" href="viewproduct.php?id='.$row["id"].'"><span class="glyphicon glyphicon-eye-open"</span>
-        	</a> ';
+        	
         	
         	echo '<a class="btn btn-warning" href="updateProduct.php?id='.$row["id"].'"><span class="glyphicon glyphicon-pencil"</span>
         	</a> ';
